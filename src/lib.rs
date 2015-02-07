@@ -463,6 +463,13 @@ pub const REG_RESOURCE_REQUIREMENTS_LIST: DWORD = 10;
 pub const REG_QWORD: DWORD = 11;
 pub const REG_QWORD_LITTLE_ENDIAN: DWORD = 11;
 
+pub const MOVEFILE_COPY_ALLOWED: DWORD = 2;
+pub const MOVEFILE_CREATE_HARDLINK: DWORD = 16;
+pub const MOVEFILE_DELAY_UNTIL_REBOOT: DWORD = 4;
+pub const MOVEFILE_FAIL_IF_NOT_TRACKABLE: DWORD = 32;
+pub const MOVEFILE_REPLACE_EXISTING: DWORD = 1;
+pub const MOVEFILE_WRITE_THROUGH: DWORD = 8;
+
 // guiddef.h
 #[repr(C)] #[derive(Clone, Copy, Debug)]
 pub struct GUID {
